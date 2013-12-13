@@ -27,7 +27,6 @@
 
 $(document).on('click', 'a', function (e) {
     e.preventDefault();
-    $(this).parents("li").css("text-decoration", "line-through");
     $(this).parent().fadeOut("slow");
 });
 
