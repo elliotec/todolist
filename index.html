@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Code Fellows To-do List</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    </head>
+    <body>
+      <form>
+        <label><h2>~Code Fellows Todo List~</h2></label>
+        <input id="addtodo" type="text"  autofocus="autofocus" placeholder="Whatcha gonna do?"/>
+         <input id= "plus" type="submit" value="+">
+      </form>
+        <ul></ul>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+          $('form').submit(function () {
+    if ($('#addtodo').val() !== '') {
+        var input_value = $('#addtodo').val();
+        $('ul').prepend('<li><a href="">&#x2713;</a>' + input_value + '</li>');
+    };
+    $('#addtodo').val('');
+    $('')
+    return false;
+});
+
+$(document).on('click', 'a', function (e) {
+    e.preventDefault();
+    $(this).parents("li").css("text-decoration", "line-through");
+    $(this).parent().fadeOut("slow");
+});
+
+        </script>
+    </body>
+</html>

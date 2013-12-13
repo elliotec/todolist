@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #3f3f3f;
+}
+
+h2{
+    color: #D23127;
+    font-size: 40pt;
+}
+
+a {
+    margin-right: 25px;
+    color: #01a301;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul{
+    margin-left: -20px;
+}
+
+li {
+    color: white;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    list-style-type: none;
+    text-align: left;
+}
+
+#addtodo {
+    font-size: 22pt;
+    position: relative;
+}
+
+#plus {
+    font-size: 14pt;
+    position: relative;
+}
